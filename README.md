@@ -1,27 +1,36 @@
-# Untitled1
+# Aplicación del Servidor Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+Esta es una aplicación de servidor Angular que sirve como plantilla para una aplicación web básica. La aplicación está escrita en TypeScript y utiliza Angular como su principal marco de trabajo.
 
-## Development server
+## Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- La aplicación muestra un título y un contador, que se puede incrementar haciendo clic en un botón.
+- La aplicación incluye un botón de navegación que redirige a la página de inicio.
+- La aplicación incluye enlaces a las redes sociales de Github, Twitter y Youtube.
+- La aplicación utiliza un CSS personalizado para el estilo.
 
-## Code scaffolding
+## Cómo funciona
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+La aplicación utiliza la arquitectura basada en componentes de Angular. El componente principal es `app.component.html`, que sirve como el componente raíz de la aplicación.
 
-## Build
+El `app.component.html` incluye un logotipo SVG de Angular, un título, un contador y un botón para incrementar el contador. También incluye una lista de enlaces e iconos de redes sociales.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+El contador se incrementa mediante una función `incrementCounter()` que se activa al hacer clic en el botón.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+La función `incrementCounter()` es un método que se llama cuando se hace clic en el botón "Incrementar". Esta función es responsable de aumentar el valor de la variable `contador` en 1 cada vez que se hace clic.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+El botón Inicio es un botón de navegación que utiliza la directiva RouterLink de Angular. Cuando se hace clic, redirige al usuario a la página de inicio de la aplicación. La directiva `routerLink` está vinculada a una matriz `['/home']`, que representa la ruta de navegación deseada.
 
-## Further help
+La aplicación utiliza el Router de Angular para navegar entre diferentes componentes. La directiva `<router-outlet />` se utiliza como un marcador de posición que Angular llena dinámicamente en función del estado actual del router.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Estilo
+
+La aplicación utiliza CSS para el estilo. Las reglas de CSS se incluyen en el archivo `app.component.html` en sí. La regla `font-weight: 500;`, por ejemplo, establece el peso de la fuente del texto.
+
+## Ejecución de la Aplicación
+
+Para ejecutar la aplicación, necesitas tener instalado Node.js y npm. También necesitas instalar el CLI de Angular. Una vez instalados, puedes ejecutar `npm install` para instalar las dependencias necesarias, y luego `ng serve` para iniciar la aplicación.
+
+Por favor, ten en cuenta que esta es una plantilla básica y se puede extender según tus necesidades.
